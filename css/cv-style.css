@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
 h1 {
     color: #4F4F4F;
     font-family: Montserrat;
@@ -114,6 +118,7 @@ padding: 0px 103px;
 align-items: flex-start;
 gap: 59px;
 flex-wrap: wrap;
+
 }
 
 .photo-name img {
@@ -205,6 +210,7 @@ width:70%;
     gap: 25px;
     flex-wrap: wrap;
 margin:8%;
+
 }
 
   /* DESIGN PROJECTS MOBILE*/
@@ -221,3 +227,134 @@ a {
     text-decoration: none;
     color: #FFF;
 }
+
+/* search hover project name */
+.desprojprev-container a {
+    color:#81637E;
+    font-weight: 500;
+}
+
+/* .design-projects img:hover {
+    background-color: #81637E;
+} */
+
+
+/* PROJECTS HOVER */
+/* .desprojprev1:hover #previewImage {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .desprojprev1:hover .explore-icon {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+
+  .explore-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out, transform 0.3s ease-in-out;
+  } */
+
+
+  .desprojprev-container{
+    position: relative;
+    
+  }
+
+  .desprojprev-container:hover{
+    transform: scale(1.01);
+    transition: 0.6s ease-out;
+    border-radius: 20px;
+    box-shadow: 0px 4px 14px 0px rgba(107, 107, 107, 0.25);
+  }
+
+  .desprojprev-container:hover > img {
+    opacity: 0.05;
+    transition: 5ms ease-in;
+    
+  }
+
+  .desprojprev-container:hover .other {
+    opacity: 1;
+}
+
+    .other{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    
+    }
+
+
+.hover-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+
+.abs-position1{
+    position: absolute;
+bottom:-150px;
+left:350px;
+}
+
+
+.abs-position2{
+    position: absolute;
+    bottom:-70px;
+    left:350px;
+    }
+
+
+
+    /* TOOLTTIP */
+    .tooltip {
+        display: inline-block;
+        position: absolute;
+        background-color: black;
+        color: aliceblue;
+        padding: 8px 15px;
+        border-radius: 3px;
+        /* margin-top: -26px; */
+        margin-top: -4px;
+        /* left: 90px; */
+        left: 150px;
+        right:20px;
+        opacity: 0;
+        /* visibility: hidden; */
+        font-size: 13px;
+        /* letter-spacing: .5px; */
+
+    }
+    .tooltip::after {
+            content: '';
+            display: block;
+            position: absolute;
+            /* left: -4px;
+            top: 10px; */
+            left:115px;
+            top:10px;
+            transform: rotate(311deg);
+            /* transform: rotate(45deg); */
+            width: 20px;
+            height: 10px;
+            background-color: inherit;
+        }
+    a:hover .tooltip {
+    visibility: visible;
+            opacity: 1;
+        }
