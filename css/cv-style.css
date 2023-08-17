@@ -5,9 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    overflow: hidden;
-}
+
 
 h1 {
     color: #4F4F4F;
@@ -26,7 +24,7 @@ h2 {
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     line-height: normal;
     letter-spacing: 2.4px;
     text-transform: uppercase;
@@ -43,10 +41,10 @@ gap: 12.721px;
  .photo-name {
     display: flex;
     align-items: center;
-    /* gap: 100px; */
+    gap: 100px;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 5% 10%;
+    justify-content: space-evenly;
+    padding: 10% 7%;
 
  }
 
@@ -122,7 +120,7 @@ flex-wrap: wrap;
 }
 
 .photo-name img {
- width: 383px;
+ width: 240px;
 
 }
 
@@ -178,7 +176,8 @@ width:70%;
 #pdfContainer {
     display: none;
     position: fixed;
-    top: 50%;
+    /* top: 60%; */
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
@@ -209,7 +208,7 @@ width:70%;
     align-content: center;
     gap: 25px;
     flex-wrap: wrap;
-margin:8%;
+margin:5%;
 
 }
 
@@ -262,48 +261,55 @@ a {
 
   .desprojprev-container{
     position: relative;
+    display: flex;
+    width:600px;
     
   }
 
-  .desprojprev-container:hover{
-    transform: scale(1.01);
-    transition: 0.6s ease-out;
-    border-radius: 20px;
-    box-shadow: 0px 4px 14px 0px rgba(107, 107, 107, 0.25);
-  }
 
   .desprojprev-container:hover > img {
     opacity: 0.05;
     transition: 5ms ease-in;
-    
+    box-shadow: 0px 4px 14px 0px rgba(107, 107, 107, 0.25);
   }
 
   .desprojprev-container:hover .other {
     opacity: 1;
 }
 
+
     .other{
         transition: .5s ease;
         opacity: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        left:-300px;
+        bottom:-90%;
+        /* top: 50%;
+        left: 50%; */
         transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        /* -ms-transform: translate(-50%, -50%); */
         text-align: center;
     
     }
 
 
+    #previewImage:hover {
+        /* transform: scale(1.01); */
+        transition: 0.6s ease-out;
+      }
+
+    .projPlusPdf{
+        display: flex;
+    }
+
+
 .hover-container{
     display: inline-flex;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
     position: relative;
 }
-
-
 
 
 .abs-position1{
@@ -315,8 +321,13 @@ left:350px;
 
 .abs-position2{
     position: absolute;
-    bottom:-70px;
-    left:350px;
+    bottom: 10px;
+    left: 480px;
+    opacity: 0;
+    }
+
+    .link:hover a .abs-position2 {
+        opacity: 1;
     }
 
 
@@ -355,6 +366,75 @@ left:350px;
             background-color: inherit;
         }
     a:hover .tooltip {
-    visibility: visible;
+    /* visibility: visible; */
             opacity: 1;
         }
+
+
+
+    .hr-lines {
+        display: flex;
+        justify-content: center;
+    }
+
+    hr {
+        width:200px;
+        border: 1px solid #81637E;
+        height: 0.1px;
+        border-radius: 100px;
+        opacity: 0.65;
+    }
+
+    @media screen and (max-width: 500px) {
+        hr {
+            width: 80px;
+        }
+    }
+        
+    }
+
+    .design-projects {
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+
+    .proj-title{
+    opacity: 0.65;
+    }
+
+
+  /* search icon and project name */
+    .link {
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    position: relative;
+    align-items:center;
+    width:400px;
+    }
+
+    .design-proj-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+    }
+
+    p {
+        margin:0px;
+    }
+
+    .dev-projects{
+
+        margin-top: 50px;
+    }
+
+    .desprojprev-container:hover {
+        transform: scale(1.06);
+        transition: 0.6s ease-out;
+
+/* SHA */
+box-shadow: 0px 4px 30px 0px rgba(169, 61, 184, 0.07);
+
+    }
