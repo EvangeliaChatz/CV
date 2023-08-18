@@ -296,6 +296,7 @@ a {
     #previewImage:hover {
         /* transform: scale(1.01); */
         transition: 0.6s ease-out;
+        cursor: pointer;
       }
 
     .projPlusPdf{
