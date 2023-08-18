@@ -5,7 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
 
+    background-image: url('/Users/evangeliachatzilygeroudi/Desktop/desktop/TEST/CV-WEBSITE/photos/background image.png');
+}
 
 h1 {
     color: #4F4F4F;
@@ -192,10 +195,26 @@ width:70%;
 #closeButton {
     cursor: pointer;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: -20px;
+    right: -20px;
     font-size: 20px;
     font-weight: bold;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: #81637E;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#closeButton:hover{
+    background-color: #f4e5f3;
+    color: #81637E;
+    transition: 5ms ease-in;
+   
 }
 
 
