@@ -7,7 +7,7 @@
 
 body {
 
-    background-image: url('/photos/background image.png');
+    background-image: url('/Users/evangeliachatzilygeroudi/Desktop/desktop/TEST/CV-WEBSITE/photos/background image.png');
 }
 
 h1 {
@@ -280,9 +280,15 @@ a {
 
   .desprojprev-container{
     position: relative;
-    display: flex;
+    display: inline-flex;
     width:600px;
-    
+  }
+
+  /* KIN NEO */
+  @media (max-width:500px) {
+    .desprojprev-container{
+        width:300px;
+    }
   }
 
 
@@ -441,6 +447,15 @@ left:350px;
     justify-content: center;
     }
 
+
+    @media (max-width:500px) {
+        .design-proj-flex {
+            justify-content: flex-start;
+        }
+    }
+
+
+
     p {
         margin:0px;
     }
@@ -458,3 +473,4 @@ left:350px;
 box-shadow: 0px 4px 30px 0px rgba(169, 61, 184, 0.07);
 
     }
+
