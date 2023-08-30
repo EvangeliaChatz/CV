@@ -7,7 +7,7 @@
 
 body {
 
-    background-image: url('/Users/evangeliachatzilygeroudi/Desktop/desktop/TEST/CV-WEBSITE/photos/background image.png');
+    /* background-image: url('/Users/evangeliachatzilygeroudi/Desktop/desktop/TEST/CV-WEBSITE/photos/background image.png'); */
 }
 
 h1 {
@@ -287,10 +287,9 @@ a {
   /* KIN NEO */
   @media (max-width:500px) {
     .desprojprev-container img{
-        width:300px;
+        /* width:300px; */
     }
   }
-
 
   .desprojprev-container:hover > img {
     opacity: 0.05;
