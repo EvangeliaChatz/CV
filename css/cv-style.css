@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    viewport-fit: cover;
 
     /* background-image: url('/Users/evangeliachatzilygeroudi/Desktop/desktop/TEST/CV-WEBSITE/photos/background image.png'); */
 }
@@ -90,12 +96,12 @@ letter-spacing: 1.53px;
  @media (max-width:500px) {
     h1{
         text-align: center;
-        font-size: 26px;
+        font-size: 22px;
     }
 
     h2{
 
-    font-size: 16px;
+    font-size: 15px;
     }
     .name {
     align-items: center;
@@ -188,8 +194,16 @@ width:70%;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 1000px;
+    width: 80%;
+    /* width: 1000px; */
     /* height:100vh; */
+    
+}
+
+
+#pdfPreview {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #closeButton {
@@ -280,7 +294,7 @@ a {
 
   .desprojprev-container{
     position: relative;
-    display: inline-flex;
+    display: flex;
     width:600px;
   }
 
@@ -288,6 +302,8 @@ a {
   @media (max-width:500px) {
     .desprojprev-container img{
         /* width:300px; */
+        max-width: 80%;
+        display:flex;
     }
   }
 
@@ -416,12 +432,13 @@ left:350px;
         }
     }
         
-    }
 
     .design-projects {
         display: flex;
         flex-direction: column;
         gap:5px;
+        align-items: center;
+        justify-content: center;
     }
 
     .proj-title{
@@ -429,14 +446,14 @@ left:350px;
     }
 
 
-  /* search icon and project name */
+  /* search icon and project name */ 
     .link {
     display: flex;
     gap:10px;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
     align-items:center;
-    width:400px;
+    width:300px;
     }
 
     .design-proj-flex{
@@ -449,7 +466,10 @@ left:350px;
 
     @media (max-width:500px) {
         .design-proj-flex {
-            justify-content: flex-start;
+            /* justify-content: flex-start; */
+
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -474,5 +494,11 @@ box-shadow: 0px 4px 30px 0px rgba(169, 61, 184, 0.07);
     }
 
 
+
+
+    #pdfPreview {
+        max-width: 100%;
+        max-height: 100%;
+    }
 
 
