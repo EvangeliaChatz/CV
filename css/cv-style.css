@@ -470,7 +470,7 @@ left:350px;
     @media (max-width:500px) {
         .design-proj-flex {
             /* justify-content: flex-start; */
-
+            align-items: center;
             display: flex;
             flex-direction: column;
         }
