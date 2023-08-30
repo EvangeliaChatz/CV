@@ -474,6 +474,14 @@ left:350px;
             display: flex;
             flex-direction: column;
         }
+
+        .desprojprev-container:hover {
+            transform: scale(1);
+        }
+
+        .other{
+            left:-200px;
+        }
     }
 
 
