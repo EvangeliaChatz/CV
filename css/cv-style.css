@@ -295,7 +295,7 @@ a {
   .desprojprev-container{
     position: relative;
     display: flex;
-    /* width:600px; */
+    width:600px;
   }
 
   /* KIN NEO */
@@ -304,6 +304,9 @@ a {
         /* width:300px; */
         max-width: 80%;
         display:flex;
+    }
+    .desprojprev-container{
+        width:359px;
     }
   }
 
