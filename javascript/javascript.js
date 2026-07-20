@@ -54,4 +54,12 @@ const previewImages = document.querySelectorAll('#previewImage');
         }
 //douleuei gia ola ta pdf
 
+function openProtectedProject(project) {
+    const password = prompt("Εισάγετε τον κωδικό:");
 
+    if (project === "piraeus" && password === "1234") {
+        document.getElementById("pdfContainer").style.display = "block";
+    } else {
+        alert("Λάθος κωδικός!");
+    }
+}
