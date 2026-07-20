@@ -49,7 +49,7 @@
             <div class="design-proj-flex">
                 <!-- Piraeus Bank -->
                 <div   class="projPlusPdf">
-                       <div  class="other hover-container" ; onclick="openProtectedProject('piraeus')>
+                       <div  class="other hover-container" onclick="openProtectedProject('piraeus')>
                             <img  src="photos/Piraeusbankprojects.png" alt="Image" width="600">
                             <a id="previewImage"  class="other hover-container">
                                 <!-- search icon and project name -->
@@ -312,16 +312,10 @@
 
 
 <script>
- function openProtectedProject(project) {
-    const password = prompt("Εισάγετε τον κωδικό:");
 
-    if (project === "piraeus" && password === "1234") {
-        document.getElementById("pdfContainer").style.display = "block";
-    } else {
-        alert("Λάθος κωδικός!");
-    }
-}
 </script>
+
+    
     <script src="javascript/javascript.js"></script>
 
     <!-- Google tag (gtag.js) -->
